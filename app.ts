@@ -8,7 +8,7 @@ interface SmartPhoneIn{
     azzeraChiamate():void;
 }
 
-abstract class SmartPhoneAb implements SmartPhoneIn{
+ class SmartPhone implements SmartPhoneIn{
     credito: number;
     numeroChiamate: number;
     constructor(_entita:number,_num:number)
@@ -41,15 +41,7 @@ abstract class SmartPhoneAb implements SmartPhoneIn{
     
 }
 
-class SmartPhone extends SmartPhoneAb{
-    constructor(_entita:number,_num:number)
-    {
-        super(_entita,_num);
-        this.credito=_entita;
-        this.numeroChiamate=_num;
-        
-    } 
-}
+
 
 let primo= new SmartPhone(10,3);
 let secondo= new SmartPhone(15,6);
