@@ -19,7 +19,7 @@ abstract class SmartPhoneAb implements SmartPhoneIn{
     }
     public ricarica(credito: number): void {
         this.credito= this.credito+credito;
-        console.log("Hai ricaricato:",credito,"Credito rsiduo:",this.credito);
+        console.log("Hai ricaricato:",credito,"Credito residuo:",this.credito);
         
     }
     public chiamata(durata: number): void {
